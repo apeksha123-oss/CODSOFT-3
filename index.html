@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <P>Frontend Web Developer</P>
+                <h1>Hi, I'm <span>Apeksha </span><br>Malunjkar</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+               <div class="about-col-1">
+                <img src="Images/about.jpg">
+               </div>
+
+               <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a passionate frontend web developer and a dedicated engineering student with a strong foundation in creating user-friendly,
+                    visually appealing, and responsive web applications.
+                    <br>With a keen eye for design and a commitment to delivering seamless user experiences,
+                    <br> I enjoy turning ideas into interactive digital solutions.
+                <br>Currently pursuing my B.E in Electronics and telecommunication,
+                <br> I have honed my skills in HTML, CSS, JavaScript,C and C++.
+                <br> I am always eager to learn new technologies, tackle challenges, and collaborate on innovative projects.
+                <br>When I’m not coding, I enjoy exploring the latest trends in web development, enhancing my problem-solving skills, and contributing to open-source projects.
+                <br> I aim to merge my technical expertise with creative design to build impactful solutions for the digital world.
+                <br>Feel free to explore my portfolio and see how I bring concepts to life!</p>
+               
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Web Developer</span><br>Web app development</li>
+                        <li><span>UI/UX</span><br>Designing Web/app interfaces</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                    </ul>
+                </div>
+            </div> 
+            </div>
+        </div>
+    </div>
+    <!---------------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class='bx bx-code-alt' ></i>
+                    <h2>Web Design</h2>
+                    <p>Custom Web Design:-
+                        <br>Creating modern and professional designs tailored to specific industries.
+                        <br>Experimenting with unique layouts to express creativity.
+                       <br>Responsive Design:-
+                        <br>Developing websites that look great on any device.
+                        <br>Ensuring usability across smartphones, tablets, and desktops.</p>
+                        <a href="#">learn more</a>
+
+                </div>
+                <div>
+                    <i class='bx bxs-crop' ></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI Design:-
+                        <br>Designing clean and modern interfaces tailored to specific industries.
+                        <br>Crafting Layouts that balance aesthetics and functionality.
+                       <br>UX Design:- 
+                        <br>Creating intuitive user journeys to enhance engagement.
+                        <br>Conducting basic user research to align designs with user needs.</p>
+                        <a href="#">learn more</a>
+
+                </div>
+                <div>
+                    <i class='bx bx-happy-alt' ></i>
+                    <h2>App Design</h2>
+                    <p>Web App Design:-
+                       <br>Crafting modern, responsive designs for web applications.
+                       <br>Prioritizing usability and performance for online platforms.</p>
+                       <a href="#">learn more</a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-------------contact------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>apekshamalunjkar8@gmail.com</p>
+                    <p>7972894031</p>
+                    <div class="social-icons">
+                        <a href="<i class='bx bxl-instagram-alt'></i>"></a>
+                        <a href="<i class='bx bxl-linkedin-square' ></i>"></a>
+
+                    </div>
+                    <a href="images/My CV.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    
+
+
+    <script>
+
+        var tablinks = document.getElementByClassName("tab-links");
+        var tabcontents = document.getElementByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablinks of tablinks){
+                tablink.classlist.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+
+        }
+    </script>
+    
+</body>
+</html>
